@@ -1,0 +1,93 @@
+<svg width="100%" viewBox="0 0 680 420" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Vinyl record background pattern</title>
+<style>
+  .record-outer { fill: #1a1a1a; }
+  .groove { fill: none; stroke: #2a2a2a; stroke-width: 1; }
+  .groove-light { fill: none; stroke: #333; stroke-width: 0.5; }
+  .label-a { fill: #c0392b; }
+  .label-b { fill: #26a69a; }
+  .label-c { fill: #e67e22; }
+  .label-d { fill: #8e44ad; }
+  .hole { fill: #111; }
+  .shine { fill: none; stroke: #3a3a3a; stroke-width: 0.8; opacity: 0.6; }
+</style>
+
+<rect width="680" height="420" fill="#f5f5f5"/>
+
+<g transform="translate(80, 90) rotate(-20)">
+  <circle r="72" class="record-outer"/>
+  <circle r="68" class="groove"/><circle r="62" class="groove"/><circle r="56" class="groove"/>
+  <circle r="50" class="groove"/><circle r="44" class="groove"/><circle r="38" class="groove"/>
+  <circle r="32" class="groove"/><circle r="27" class="groove-light"/>
+  <circle r="22" class="label-a"/>
+  <circle r="6" class="hole"/>
+  <circle r="18" class="shine"/>
+</g>
+
+<g transform="translate(580, 60) rotate(15)">
+  <circle r="80" class="record-outer"/>
+  <circle r="76" class="groove"/><circle r="70" class="groove"/><circle r="64" class="groove"/>
+  <circle r="58" class="groove"/><circle r="52" class="groove"/><circle r="46" class="groove"/>
+  <circle r="40" class="groove"/><circle r="34" class="groove"/><circle r="28" class="groove-light"/>
+  <circle r="24" class="label-b"/>
+  <circle r="6" class="hole"/>
+  <circle r="20" class="shine"/>
+</g>
+
+<g transform="translate(340, 50) rotate(5)">
+  <circle r="55" class="record-outer"/>
+  <circle r="51" class="groove"/><circle r="46" class="groove"/><circle r="41" class="groove"/>
+  <circle r="36" class="groove"/><circle r="31" class="groove"/><circle r="26" class="groove-light"/>
+  <circle r="18" class="label-c"/>
+  <circle r="5" class="hole"/>
+  <circle r="14" class="shine"/>
+</g>
+
+<g transform="translate(180, 310) rotate(-10)">
+  <circle r="88" class="record-outer"/>
+  <circle r="84" class="groove"/><circle r="78" class="groove"/><circle r="72" class="groove"/>
+  <circle r="66" class="groove"/><circle r="60" class="groove"/><circle r="54" class="groove"/>
+  <circle r="48" class="groove"/><circle r="42" class="groove"/><circle r="36" class="groove"/>
+  <circle r="30" class="groove-light"/>
+  <circle r="26" class="label-d"/>
+  <circle r="7" class="hole"/>
+  <circle r="22" class="shine"/>
+</g>
+
+<g transform="translate(500, 320) rotate(25)">
+  <circle r="70" class="record-outer"/>
+  <circle r="66" class="groove"/><circle r="60" class="groove"/><circle r="54" class="groove"/>
+  <circle r="48" class="groove"/><circle r="42" class="groove"/><circle r="36" class="groove"/>
+  <circle r="30" class="groove"/><circle r="24" class="groove-light"/>
+  <circle r="20" class="label-a"/>
+  <circle r="6" class="hole"/>
+  <circle r="16" class="shine"/>
+</g>
+
+<g transform="translate(650, 250) rotate(-30)">
+  <circle r="50" class="record-outer"/>
+  <circle r="46" class="groove"/><circle r="40" class="groove"/><circle r="34" class="groove"/>
+  <circle r="28" class="groove"/><circle r="22" class="groove-light"/>
+  <circle r="16" class="label-b"/>
+  <circle r="4" class="hole"/>
+  <circle r="12" class="shine"/>
+</g>
+
+<g transform="translate(30, 330) rotate(8)">
+  <circle r="45" class="record-outer"/>
+  <circle r="41" class="groove"/><circle r="36" class="groove"/><circle r="31" class="groove"/>
+  <circle r="26" class="groove"/><circle r="21" class="groove-light"/>
+  <circle r="15" class="label-c"/>
+  <circle r="4" class="hole"/>
+  <circle r="11" class="shine"/>
+</g>
+
+<g transform="translate(380, 260) rotate(-15)">
+  <circle r="40" class="record-outer"/>
+  <circle r="36" class="groove"/><circle r="31" class="groove"/><circle r="26" class="groove"/>
+  <circle r="21" class="groove-light"/>
+  <circle r="14" class="label-d"/>
+  <circle r="4" class="hole"/>
+  <circle r="10" class="shine"/>
+</g>
+</svg>
