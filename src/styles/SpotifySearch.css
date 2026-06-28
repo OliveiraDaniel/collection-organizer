@@ -1,5 +1,6 @@
 .page {
   min-height: 100vh;
+  padding: 2rem;
 }
 
 .spotify-card {
@@ -276,4 +277,50 @@
 
 .btn-change:hover {
   text-decoration: underline;
+}
+
+.submit {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1.25rem;
+  background: #26a69a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit:hover:not(:disabled) {
+  background: #00897b;
+}
+
+.submit:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.search-empty {
+  color: #999;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  vertical-align: middle;
 }

@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import './styles/App.css'
 import Header from './components/Header'
-import Home from './components/Home'
 import Collection from './components/Collection'
 import SpotifySearch from './components/SpotifySearch'
 import SuccessModal from './components/SuccessModal'
@@ -9,7 +8,7 @@ import { api } from './api'
 
 function App() {
   const [discos, setDiscos] = useState([])
-  const [view, setView] = useState('home')
+  const [view, setView] = useState('collection')
   const [showModal, setShowModal] = useState(false)
   const [addKey, setAddKey] = useState(0)
 
@@ -40,14 +39,10 @@ function App() {
     <>
       <Header />
       <main>
-        {view === 'home' && (
-          <Home onAdd={() => setView('add')} onView={() => setView('collection')} />
-        )}
         {view === 'collection' && (
           <Collection
             discos={discos}
             onAdd={() => setView('add')}
-            onBack={() => setView('home')}
             onDelete={handleDeleteDisco}
           />
         )}
@@ -55,7 +50,7 @@ function App() {
           <SpotifySearch
             key={addKey}
             onSubmit={handleAddDisco}
-            onBack={() => setView('home')}
+            onBack={() => setView('collection')}
           />
         )}
       </main>

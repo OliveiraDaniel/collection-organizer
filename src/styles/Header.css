@@ -5,17 +5,21 @@
   align-items: center;
   padding: 0 1.5rem;
   box-sizing: border-box;
-  background-image: url('../assets/vinyl-bg.svg');
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   border-bottom: 1px solid #ddd;
 }
 
 .header-title {
-  font-size: 1.1rem;
-  color: #222;
-  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   margin: auto;
+  letter-spacing: 0.15em;
+}
+
+.header-title-accent {
+  color: #26a69a;
 }

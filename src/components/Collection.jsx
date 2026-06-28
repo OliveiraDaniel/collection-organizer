@@ -12,7 +12,7 @@ function TrashIcon() {
   )
 }
 
-export default function Collection({ discos, onAdd, onBack, onDelete }) {
+export default function Collection({ discos, onAdd, onDelete }) {
   const [genreFilter, setGenreFilter] = useState('')
   const [sort, setSort] = useState('addedAt-desc')
 
@@ -45,27 +45,32 @@ export default function Collection({ discos, onAdd, onBack, onDelete }) {
   return (
     <div className="collection-page">
       <div className="collection-header">
-        <button className="btn-back" onClick={onBack}>← Voltar</button>
         <h2>Minha Coleção <span className="count">({discos.length})</span></h2>
         <button className="btn-add" onClick={onAdd}>+ Adicionar</button>
       </div>
 
       <div className="filters">
-        <select value={genreFilter} onChange={(e) => setGenreFilter(e.target.value)}>
-          <option value="">Todos os estilos</option>
-          {allGenres.map((g) => (
-            <option key={g} value={g}>{g}</option>
-          ))}
-        </select>
+        <div className="filter-group">
+          <label htmlFor="genre-filter">Filtro por gênero</label>
+          <select id="genre-filter" value={genreFilter} onChange={(e) => setGenreFilter(e.target.value)}>
+            <option value="">Todos os estilos</option>
+            {allGenres.map((g) => (
+              <option key={g} value={g}>{g}</option>
+            ))}
+          </select>
+        </div>
 
-        <select value={sort} onChange={(e) => setSort(e.target.value)}>
-          <option value="addedAt-desc">Adicionado: mais recente</option>
-          <option value="addedAt-asc">Adicionado: mais antigo</option>
-          <option value="title-asc">A → Z</option>
-          <option value="title-desc">Z → A</option>
-          <option value="release-desc">Lançamento: mais recente</option>
-          <option value="release-asc">Lançamento: mais antigo</option>
-        </select>
+        <div className="filter-group">
+          <label htmlFor="sort-select">Ordenação</label>
+          <select id="sort-select" value={sort} onChange={(e) => setSort(e.target.value)}>
+            <option value="addedAt-desc">Adicionado: mais recente</option>
+            <option value="addedAt-asc">Adicionado: mais antigo</option>
+            <option value="title-asc">A → Z</option>
+            <option value="title-desc">Z → A</option>
+            <option value="release-desc">Lançamento: mais recente</option>
+            <option value="release-asc">Lançamento: mais antigo</option>
+          </select>
+        </div>
       </div>
 
       {filtered.length === 0 ? (
@@ -89,7 +94,7 @@ export default function Collection({ discos, onAdd, onBack, onDelete }) {
                 {disco.releaseDate && <p className="disco-year">{disco.releaseDate.slice(0, 4)}</p>}
                 {disco.genres?.length > 0 && (
                   <div className="disco-genres">
-                    {disco.genres.slice(0, 2).map((g) => (
+                    {disco.genres.slice(0, 3).map((g) => (
                       <span key={g} className="genre-tag">{g}</span>
                     ))}
                   </div>
